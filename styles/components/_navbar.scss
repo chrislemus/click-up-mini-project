@@ -1,2 +1,26 @@
 .navbar {
+  display: flex;
+  width: 100%;
+  max-width: 1120px;
+  margin: 2.9375rem auto 0;
+  align-items: center;
+  justify-content: space-between;
+  &__brand {
+    border: 1px solid red;
+  }
+  &__left {
+    border: 1px solid black;
+    // flex-grow: 1;
+  }
+  &__right {
+    border: 1px solid green;
+  }
+}
+
+.nav {
+  display: flex;
+  &__item {
+    background: red;
+    margin: 0 1.25rem;
+  }
 }

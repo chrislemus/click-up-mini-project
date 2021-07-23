@@ -1,11 +1,29 @@
+// @font-face {
+//   font-family: 'Avenir-regular';
+//   src: url('/assets/avenir-font/Avenir-Black.woff') format('opentype');
+// }
+
 @font-face {
-  font-family: 'Avenir-regular';
-  src: url('/assets/avenir-font/Avenir-Black.woff') format('opentype');
+  font-family: 'Avenir';
+  src: url('/assets/avenir-font/avenir-roman.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Avenir';
+  src: url('/assets/avenir-font/Avenir-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Avenir';
+  src: url('/assets/avenir-font/Avenir-Heavy.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
 }
 
-$text-font-primary: 'Avenir-regular';
-$text-font-primary-bold: 'Avenir-bold';
-$text-font-heading: 'Helvetica';
+$text-font-primary: 'Avenir';
+$text-font-title: 'Helvetica';
 
 * {
   font-size: 16px;
@@ -13,14 +31,17 @@ $text-font-heading: 'Helvetica';
   font-weight: 500;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: $text-font-heading;
-  font-weight: 800;
+.is-title {
+  font-family: $text-font-title;
+  font-weight: 700;
+  font-size: 5rem;
+}
+
+p {
+  font-style: normal;
+  font-size: 18px;
+  line-height: 160%;
+  color: $color-text-secondary;
 }
 
 button {
