@@ -1,0 +1,38 @@
+@mixin button-base-styles {
+  text-decoration: none;
+  border-radius: 50px;
+  display: inline-flex;
+  //font-weight: 800;
+  align-items: center;
+}
+
+.button-cta {
+  @include button-base-styles;
+  background: $color-white;
+  padding: 1.0625rem 1.8125rem;
+  box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+  color: $color-text-primary;
+  &__icon {
+    padding-left: 1rem;
+    width: 20px;
+    height: 14px;
+  }
+  &--ghost {
+    background: none !important;
+    box-shadow: none !important;
+  }
+}
+
+.button-primary {
+  @include button-base-styles;
+  background: $color-primary;
+  color: $color-white;
+  padding: 1rem 2.3125rem;
+}
+
+.button-secondary {
+  @include button-base-styles;
+  background: $color-secondary;
+  color: $color-white;
+  padding: 1rem 2.3125rem;
+}
